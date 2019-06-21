@@ -1,0 +1,16 @@
+version: '3'
+services:
+  jenkins:
+    container_name: jforg-artifact
+    image: docker.bintray.io/jfrog/artifactory-pro:latest
+    ports:
+      - "8090:8081"
+    restart: always
+    volumes:
+      - $PWD/jforg_home:/var/opt/jfrog/artifactory
+    networks:
+      - net
+networks:
+  net:
+
+
