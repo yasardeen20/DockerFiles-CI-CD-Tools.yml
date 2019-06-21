@@ -1,6 +1,6 @@
 version: '3'
 services:
-  jenkins:
+  jfrog:
     container_name: jforg-artifact
     image: docker.bintray.io/jfrog/artifactory-pro:latest
     ports:
